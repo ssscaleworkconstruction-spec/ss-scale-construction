@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SS Scale Construction</title>
+<meta name="description" content="SS Scale Construction in Kollam, Kerala offers tile work, construction work, flooring and finishing services. Contact us on WhatsApp for project enquiries.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#173D32">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "SS Scale Construction",
+  "telephone": "+919544403022",
+  "areaServed": {
+    "@type": "City",
+    "name": "Kollam, Kerala, India"
+  },
+  "description": "Tile work, construction work, flooring and finishing services in Kollam, Kerala."
+}
+</script>
+<style>
+:root {
+  --site-primary: #173D32;
+  --site-on-primary: #FFFFFF;
+  --site-secondary: #D7A84A;
+  --site-on-secondary: #17251F;
+  --site-background: #F7F5EF;
+  --site-on-background: #18231F;
+  --site-font-body: Arial, Helvetica, sans-serif;
+  --site-font-heading: Georgia, 'Times New Roman', serif;
+  --site-heading-scale: 1;
+  --site-spacing-scale: 1;
+  --site-radius-scale: 1;
+  --site-decoration-opacity: 1;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--site-font-body);
+  background: var(--site-background);
+  color: var(--site-on-background);
+}
+#app {
+  min-height: 100vh;
+  width: 100%;
+  border-radius: 0;
+  background-color: var(--site-background);
+  color: var(--site-on-background);
+}
+a { color: inherit; }
+.container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+.topbar { background: var(--site-primary); color: var(--site-on-primary); font-size: 13px; }
+.topbar-inner { display:flex; justify-content:space-between; gap:16px; padding: calc(10px * var(--site-spacing-scale)) 0; flex-wrap:wrap; }
+.topbar a { text-decoration:none; }
+header { background: light-dark(#FFFFFF, #1D2824); border-bottom: 1px solid light-dark(#E7E5DD, #35423D); }
+.nav { display:flex; align-items:center; justify-content:space-between; gap:24px; padding: calc(18px * var(--site-spacing-scale)) 0; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; min-width: 0; }
+.brand-mark { width:48px; height:48px; border-radius: calc(8px * var(--site-radius-scale)); background:var(--site-secondary); color:var(--site-on-secondary); display:grid; place-items:center; font-weight:900; font-size:17px; letter-spacing:-1px; flex-shrink:0; }
+.brand strong { display:block; font-size:17px; letter-spacing:1.2px; }
+.brand small { display:block; margin-top:4px; color:light-dark(#66716B, #BAC6BF); font-size:10px; letter-spacing:2px; }
+nav { display:flex; align-items:center; gap:26px; }
+nav a { text-decoration:none; font-size:13px; font-weight:700; }
+nav a:hover { color:var(--site-secondary); }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:0; border-radius: calc(4px * var(--site-radius-scale)); padding:14px 20px; font-weight:800; text-decoration:none; cursor:pointer; transition:transform .18s, opacity .18s; }
+.btn:hover { transform:translateY(-2px); }
+.btn-primary { background:var(--site-secondary); color:var(--site-on-secondary); }
+.btn-dark { background:var(--site-primary); color:var(--site-on-primary); }
+.btn-outline { border:1px solid currentColor; color:inherit; background:transparent; }
+.menu-toggle { display:none; background:transparent; border:1px solid currentColor; color:inherit; border-radius:4px; padding:9px 12px; font-size:20px; }
+.hero { background:var(--site-primary); color:#FFFFFF; position:relative; overflow:hidden; }
+.hero-grid { display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:42px; padding: clamp(55px, 8vw, 100px) 0; }
+.eyebrow { color:var(--site-secondary); text-transform:uppercase; letter-spacing:3px; font-size:11px; font-weight:800; }
+h1,h2,h3 { font-family:var(--site-font-heading); font-weight:600; }
+h1 { font-size:calc(clamp(42px, 5.6vw, 72px) * var(--site-heading-scale)); line-height:1.04; letter-spacing:-1.8px; margin:18px 0; max-width:650px; }
+.hero p { color:#D9E3DC; line-height:1.8; font-size:16px; max-width:520px; }
+.hero-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+.hero-visual { min-height:390px; position:relative; display:flex; align-items:center; justify-content:center; }
+.building-art { width:100%; max-width:500px; aspect-ratio:4/4.3; position:relative; overflow:hidden; border-radius: calc(8px * var(--site-radius-scale)); background:linear-gradient(145deg,#D5C6A5 0%,#9C987E 35%,#334B42 35%,#182E27 100%); }
+.building-art:before { content:""; position:absolute; inset:0; opacity:var(--site-decoration-opacity); background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.15) 20.5%,transparent 21%),linear-gradient(0deg,rgba(7,22,17,.6),transparent 55%); }
+.tower { position:absolute; bottom:0; left:22%; width:57%; height:78%; background:linear-gradient(90deg,#B8B7A5,#F0E6D0 38%,#C9C7B5 39%,#7E9587 100%); clip-path:polygon(0 13%,75% 0,100% 7%,100% 100%,0 100%); box-shadow:0 0 0 1px rgba(0,0,0,.15); }
+.tower:before { content:""; position:absolute; inset:18% 8% 0 8%; background:repeating-linear-gradient(0deg,transparent 0 37px,rgba(29,62,50,.75) 38px 44px),repeating-linear-gradient(90deg,transparent 0 32px,rgba(29,62,50,.65) 33px 39px); }
+.foreground { position:absolute; bottom:0; left:0; right:0; height:20%; background:linear-gradient(180deg,#506C5D,#172D25); clip-path:polygon(0 35%,20% 0,40% 28%,62% 4%,82% 32%,100% 8%,100% 100%,0 100%); }
+.art-label { position:absolute; bottom:22px; left:22px; color:white; z-index:2; font-size:11px; letter-spacing:3px; font-weight:700; }
+.hero-badge { position:absolute; bottom:20px; right:-6px; z-index:3; background:var(--site-secondary); color:var(--site-on-secondary); padding:20px 24px; box-shadow:0 12px 35px rgba(0,0,0,.2); }
+.hero-badge strong { font-family:var(--site-font-heading); display:block; font-size:28px; }
+.hero-badge span { font-size:10px; font-weight:800; letter-spacing:1.5px; }
+.trust-strip { background:var(--site-secondary); color:var(--site-on-secondary); }
+.trust-inner { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding:22px 0; }
+.trust-item { display:flex; align-items:center; gap:12px; font-size:13px; font-weight:800; }
+.trust-icon { width:34px; height:34px; border:1px solid rgba(23,37,31,.35); display:grid; place-items:center; border-radius:50%; font-size:17px; }
+section { padding: clamp(58px, 7vw, 92px) 0; }
+.section-head { max-width:680px; margin-bottom:38px; }
+.section-head h2 { font-size:calc(clamp(32px, 4vw, 48px) * var(--site-heading-scale)); line-height:1.1; margin:12px 0 14px; }
+.section-head p { color:light-dark(#626B65, #C2CCC5); line-height:1.8; margin:0; }
+.services { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.service-card { background:light-dark(#FFFFFF, #1D2824); border:1px solid light-dark(#E6E4DC, #35423D); padding:28px; border-radius:calc(6px * var(--site-radius-scale)); }
+.service-icon { font-size:28px; width:56px; height:56px; display:grid; place-items:center; background:color-mix(in srgb, var(--site-secondary) 23%, transparent); border-radius:calc(6px * var(--site-radius-scale)); }
+.service-card h3 { font-size:24px; margin:20px 0 10px; }
+.service-card p { color:light-dark(#626B65, #C2CCC5); font-size:14px; line-height:1.8; }
+.service-card a { display:inline-block; margin-top:10px; color:light-dark(#173D32, #D7A84A); font-size:12px; font-weight:800; text-decoration:none; }
+.about { background:light-dark(#EDEBE3, #17211D); }
+.about-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; align-items:center; }
+.about-panel { background:var(--site-primary); color:white; padding:34px; min-height:310px; display:flex; flex-direction:column; justify-content:space-between; border-radius:calc(6px * var(--site-radius-scale)); }
+.about-panel .big-quote { color:var(--site-secondary); font-family:var(--site-font-heading); font-size:76px; line-height:.7; }
+.about-panel p { font-family:var(--site-font-heading); font-size:25px; line-height:1.4; }
+.about-panel small { letter-spacing:2px; color:#D8E0DA; }
+.about-copy h2 { font-size:calc(clamp(32px, 4vw, 46px) * var(--site-heading-scale)); margin:12px 0 18px; line-height:1.12; }
+.about-copy p { color:light-dark(#626B65, #C2CCC5); line-height:1.9; }
+.check-list { list-style:none; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:26px 0 0; }
+.check-list li { font-size:13px; font-weight:700; }
+.check-list li:before { content:"✓"; color:#A77B22; font-weight:900; margin-right:9px; }
+.projects-intro { display:flex; justify-content:space-between; gap:20px; align-items:end; margin-bottom:32px; }
+.projects-intro .section-head { margin:0; }
+.project-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.project { min-height:260px; position:relative; overflow:hidden; background:#43594D; color:white; border-radius:calc(6px * var(--site-radius-scale)); }
+.project-art { position:absolute; inset:0; transition:transform .3s; }
+.project:hover .project-art { transform:scale(1.04); }
+.project-art.one { background:linear-gradient(135deg,#B4AA91 0 25%,#E0D6C0 25% 43%,#526A5A 43% 45%,#233C31 45%); }
+.project-art.two { background:linear-gradient(90deg,#777E73,#D6D0BF 35%,#6C8478 36% 38%,#B7B39F 39% 70%,#31483B 71%); }
+.project-art.three { background:repeating-linear-gradient(0deg,#A99F8B 0 26px,#E5DCC9 27px 32px),linear-gradient(90deg,#2E4C3D,#E6DCC6); }
+.project-art.four { background:linear-gradient(145deg,#1F3D30 0 30%,#B9B4A3 30% 55%,#667A6D 55% 75%,#2C4336 75%); }
+.project-art:after { content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(5,18,13,.85),transparent 65%); }
+.project-info { position:absolute; left:24px; right:24px; bottom:22px; z-index:1; }
+.project-info span { color:var(--site-secondary); font-size:10px; font-weight:800; letter-spacing:2px; text-transform:uppercase; }
+.project-info h3 { font-size:25px; margin:8px 0 0; }
+.note { font-size:12px; color:light-dark(#6B736D, #C2CCC5); margin-top:18px; }
+.contact { background:var(--site-primary); color:white; }
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+.contact .section-head p { color:#D9E3DC; }
+.contact-details { display:grid; gap:18px; margin-top:30px; }
+.contact-detail { display:flex; align-items:flex-start; gap:14px; }
+.contact-detail .symbol { color:var(--site-secondary); font-size:20px; }
+.contact-detail strong { display:block; margin-bottom:5px; }
+.contact-detail span { font-size:14px; color:#D9E3DC; }
+.contact-form { background:light-dark(#FFFFFF, #1D2824); color:var(--site-on-background); padding:28px; border-radius:calc(6px * var(--site-radius-scale)); }
+.contact-form h3 { font-size:28px; margin:0 0 20px; }
+.field { margin-bottom:14px; }
+.field label { display:block; font-size:12px; font-weight:800; margin-bottom:7px; }
+.field input,.field select,.field textarea { width:100%; padding:13px 12px; border:1px solid light-dark(#D9DCD5, #47544E); background:light-dark(#FBFAF7, #17211D); color:light-dark(#18231F, #F7F5EF); border-radius:4px; font:inherit; font-size:14px; }
+.field textarea { min-height:95px; resize:vertical; }
+.contact-form .btn { width:100%; }
+footer { background:light-dark(#101C17, #101C17); color:#F7F5EF; padding:28px 0; }
+.footer-inner { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
+footer p { color:#B9C3BC; font-size:12px; margin:0; }
+footer a { color:var(--site-secondary); text-decoration:none; font-size:12px; }
+@media (max-width:850px) {
+  nav { display:none; position:absolute; top:100%; left:0; right:0; z-index:10; background:var(--site-primary); padding:20px; flex-direction:column; align-items:flex-start; gap:20px; }
+  nav.open { display:flex; }
+  .nav { position:relative; }
+  .menu-toggle { display:block; }
+  .nav .nav-cta { display:none; }
+  .hero-grid,.about-grid,.contact-grid { grid-template-columns:1fr; gap:34px; }
+  .hero-visual { min-height:320px; }
+  .building-art { max-width:420px; }
+  .services { grid-template-columns:1fr 1fr; }
+  .trust-inner { grid-template-columns:1fr; gap:12px; }
+  .projects-intro { align-items:flex-start; flex-direction:column; }
+}
+@media (max-width:560px) {
+  .container { width:min(100% - 28px, 1160px); }
+  .topbar-inner { font-size:11px; }
+  .brand strong { font-size:14px; }
+  .brand-mark { width:42px; height:42px; }
+  .services,.project-grid { grid-template-columns:1fr; }
+  .hero-grid { padding:52px 0 68px; }
+  .hero-visual { min-height:280px; }
+  .hero-badge { right:0; bottom:10px; padding:14px 17px; }
+  .hero-badge strong { font-size:23px; }
+  .check-list { grid-template-columns:1fr; }
+  .contact-form { padding:21px; }
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>BUILD WITH CONFIDENCE · QUALITY IN EVERY DETAIL</span>
+      <span>Kollam, Kerala · Construction • Tile Work</span>
+    </div>
+  </div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="SS Scale Construction home">
+        <span class="brand-mark">SS</span>
+        <span><strong>SS SCALE CONSTRUCTION</strong><small>BUILDING YOUR VISION</small></span>
+      </a>
+      <nav id="mainNav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#projects">Our Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="#contact">GET A QUOTE ↗</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Reliable work. Lasting quality.</div>
+          <h1>Building spaces.<br>Creating <span style="color:var(--site-secondary)">lasting value.</span></h1>
+            <p>From expert tile installation to construction work, SS Scale Construction in Kollam is committed to dependable workmanship, careful planning and quality you can see.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Discuss Your Project ↗</a>
+            <a class="btn btn-outline" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Stylized architectural illustration">
+          <div class="building-art">
+            <div class="tower"></div><div class="foreground"></div>
+            <div class="art-label">CRAFTED WITH CARE · BUILT TO LAST</div>
+          </div>
+          <div class="hero-badge"><strong>SS</strong><span>QUALITY FIRST</span></div>
+        </div>
+      </div>
+    </section>
+    <div class="trust-strip">
+      <div class="container trust-inner">
+        <div class="trust-item"><span class="trust-icon">✓</span> Careful, quality workmanship</div>
+        <div class="trust-item"><span class="trust-icon">⌂</span> Residential & commercial projects</div>
+        <div class="trust-item"><span class="trust-icon">✦</span> Detail-focused finishing</div>
+      </div>
+    </div>
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What we do</div>
+          <h2>Construction solutions, built around you.</h2>
+            <p>Specialising in tile work and construction in Kollam, Kerala. Whether you are planning a new space or upgrading an existing one, we help bring your project together with practical service and attention to detail.</p>
+        </div>
+        <div class="services">
+          <article class="service-card">
+            <div class="service-icon">▦</div>
+            <h3>Tile Work</h3>
+            <p>Professional tile laying for floors and walls, with careful alignment, neat joints and a clean finish.</p>
+            <a href="#contact">ENQUIRE ABOUT TILE WORK ↗</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">⌂</div>
+            <h3>Construction Work</h3>
+            <p>Support for construction projects with a focus on reliable coordination, practical solutions and quality execution.</p>
+            <a href="#contact">DISCUSS YOUR PROJECT ↗</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">✧</div>
+            <h3>Flooring & Finishing</h3>
+            <p>Finishing work that brings spaces together, with attention to detail and a polished final result.</p>
+            <a href="#contact">PLAN YOUR FINISHING ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <div class="big-quote">“</div>
+          <p>Good construction is more than a finished space. It is trust, care and craftsmanship in every detail.</p>
+          <small>SS SCALE CONSTRUCTION</small>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">About our company</div>
+          <h2>Built on care.<br>Focused on quality.</h2>
+          <p>SS Scale Construction works to make every project straightforward for the customer—from understanding the requirements to delivering careful workmanship.</p>
+          <p>We value clear communication, responsible work practices and a finish that customers can feel proud of.</p>
+          <ul class="check-list">
+            <li>Quality-focused approach</li>
+            <li>Clear communication</li>
+            <li>Attention to detail</li>
+            <li>Customer-first service</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="projects-intro">
+          <div class="section-head">
+            <div class="eyebrow">Our work</div>
+            <h2>Every detail makes a difference.</h2>
+            <p>Use this gallery to showcase your completed construction, tile and flooring projects.</p>
+          </div>
+          <a class="btn btn-dark" href="#contact">Start a Project ↗</a>
+        </div>
+        <div class="project-grid">
+          <article class="project"><div class="project-art one"></div><div class="project-info"><span>Construction</span><h3>Building Projects</h3></div></article>
+          <article class="project"><div class="project-art two"></div><div class="project-info"><span>Flooring</span><h3>Precision Tile Work</h3></div></article>
+          <article class="project"><div class="project-art three"></div><div class="project-info"><span>Finishing</span><h3>Clean, Neat Details</h3></div></article>
+          <article class="project"><div class="project-art four"></div><div class="project-info"><span>Interiors</span><h3>Spaces Made Better</h3></div></article>
+        </div>
+        <p class="note">Gallery images are illustrative placeholders. Replace these with photos of your actual completed projects before publishing.</p>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-head">
+            <div class="eyebrow">Let's build together</div>
+            <h2>Have a project in mind?</h2>
+            <p>Tell us a little about your work. Contact details can be added here so customers can reach you directly.</p>
+          </div>
+          <div class="contact-details">
+            <div class="contact-detail"><span class="symbol">⌖</span><div><strong>Service Area</strong><span>Kollam, Kerala, India</span></div></div>
+            <div class="contact-detail"><span class="symbol">☎</span><div><strong>Phone / WhatsApp</strong><span><a href="https://wa.me/919544403022" target="_blank" rel="noopener">+91 95444 03022</a></span></div></div>
+            <div class="contact-detail"><span class="symbol">✉</span><div><strong>Email</strong><span>Add your business email address</span></div></div>
+          </div>
+        </div>
+        <form class="contact-form" id="quoteForm">
+          <h3>Request a callback</h3>
+          <div class="field"><label for="customerName">Your name</label><input id="customerName" name="name" placeholder="Enter your name" required></div>
+          <div class="field"><label for="customerPhone">Phone number</label><input id="customerPhone" name="phone" type="tel" placeholder="Enter your phone number" required></div>
+          <div class="field"><label for="service">Service required</label><select id="service" name="service"><option>Tile Work</option><option>Construction Work</option><option>Flooring & Finishing</option><option>Other</option></select></div>
+          <div class="field"><label for="message">Project details</label><textarea id="message" name="message" placeholder="Briefly describe your project"></textarea></div>
+          <button class="btn btn-primary" type="submit">Prepare Enquiry ↗</button>
+          <p id="formNotice" class="note" aria-live="polite">Your enquiry will open in WhatsApp for you to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-inner">
+      <a class="brand" href="#home"><span class="brand-mark">SS</span><span><strong>SS SCALE CONSTRUCTION</strong><small>BUILDING YOUR VISION</small></span></a>
+      <p>© <span id="year"></span> SS Scale Construction. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</div>
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+menuToggle.addEventListener('click', () => {
+  const open = mainNav.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.textContent = open ? '×' : '☰';
+});
+mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+  mainNav.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.textContent = '☰';
+}));
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('quoteForm').addEventListener('submit', event => {
+  event.preventDefault();
+  const data = new FormData(event.currentTarget);
+  const message = `Hello SS Scale Construction,\nName: ${data.get('name')}\nPhone: ${data.get('phone')}\nService: ${data.get('service')}\nProject: ${data.get('message') || 'Not specified'}`;
+  document.getElementById('formNotice').textContent = 'Opening WhatsApp with your enquiry. Please press Send in WhatsApp.';
+  window.open(`https://wa.me/919544403022?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
